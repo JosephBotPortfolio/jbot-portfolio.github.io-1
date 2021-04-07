@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hunger Games Simulator - Portfolio Bot Joseph</title>
+        <link rel="icon" href="../Design/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap">
+        <link rel="stylesheet" href="styleP7.css">
+    </head>
+    
+    <header style="overflow: hidden">
+        <div id="navBar">
+            <img src="../Design/logoPortfolio3.png" id="logoPortfolio">
+            <nav id="nav">
+                <ul>
+                    <li><a href="..\index.html">Home</a></li>
+                    <li><a href="..\index2.html">Projects</a></li>
+                    <li><a href="..\index3.html">About</a></li>
+                    <li><a href="..\index4.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <div id="wrap">
+            <div id="container">
+                <h1>Simulateur de Hunger Games</h1>
+                <div id="img"></div>
+                <h2>Description</h2>
+                <label id="soulignage"></label>
+                <p>Lancé en mars 2020, ce projet s'agit d'un simulateur de hunger games complètement personnalisable et basé entièrement sur l'aléatoire.
+                    Ainsi cela peut donner des situations amusantes en fonction du nom donné aux personnages.<br>
+                    Ce projet n'est pas encore abouti, j'avais commencé à programmer l'algorithme en Python puis j'avais l'intention de le traduire ensuite
+                    en C# pour en faire un jeu mobile, mais j'ai finalement suspendu le projet. <br>Puis, je l'ai repris récemment en traduisant une partie en C#,
+                    cependant l'algorithme n'est pas encore fini, il reste pas mal de détails à prendre en compte pour que ce soit adéquat.<br>
+                    Celui-ci sera entièrement customisable, c'est-à-dire que l'utilisateur pourra créer des presets avec les noms et avatars qu'il souhaite pour
+                    chaque personnage, de plus, toutes les actions et les répliques pourront être modifiées, supprimée et de nouvelles ajoutées.<br>
+                    Globalement ce projet quoiqu'il ne soit pas abouti, fut une expérience enrichissante algorithmiquement parlant, notamment avec la gestion
+                    de l'aléatoire, des listes et tableaux multidimensionnels.
+
+                </p>
+                <h3>Demo</h3>
+                <iframe width="100%" height="50%" src="https://www.youtube.com/embed/haZ_3e-dqNk" title="Portfolio Joseph Bot - Démo Hunger Games Simulator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <h4>Download from the repository</h4>
+                <a id="GitHubButton" href="index2.html" onmouseover="Hover()" onmouseout="unHover()">
+                    <img id="imgGit" src="LogoGitHub.png">
+                    <img id="imgGitHover" src="LogoGitHubHover.png">
+                </a>
+            </div>
+
+            <div id="footer">
+                <div id="margin"></div>
+                <a id="git" href="index2.html" onmouseover="HoverIcon('iconGit', 'iconGitHover')" onmouseout="unHoverIcon('iconGit', 'iconGitHover')">
+                    <img id="iconGit" src="../Design/IconGitHub.png">
+                    <img id="iconGitHover" src="../Design/IconGitHubHover.png">
+                </a>
+                <a  id="mail" href="index2.html" onmouseover="HoverIcon('iconMail', 'iconMailHover')" onmouseout="unHoverIcon('iconMail', 'iconMailHover')">
+                    <img id="iconMail" src="../Design/IconMail.png">
+                    <img id="iconMailHover" src="../Design/IconMailHover.png">
+                </a>
+                <nav id="navFooter">
+                    <ul>
+                        <li><a href="..\index.html">Home</a></li>
+                        <li><a href="..\index2.html">My Projects</a></li>
+                        <li><a href="..\index3.html">About Me</a></li>
+                        <li><a href="..\index4.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h5>Thanks to <a id="credit" href="https://www.freepik.com/vectors/background" target="_blank">Freepik</a> for background vectors.</h5>
+                <h6>Copyright &copy; 2021 Joseph Bot. All rights reserved. </h6>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function Hover() {
+            document.getElementById('imgGit').style.opacity = 0;
+            document.getElementById('imgGitHover').style.opacity = 1; }
+        function unHover() {
+            document.getElementById('imgGit').style.opacity = 1;
+            document.getElementById('imgGitHover').style.opacity = 0; }
+
+        function HoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 0;
+            document.getElementById(iconHover).style.opacity = 1; }
+        function unHoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 1;
+            document.getElementById(iconHover).style.opacity = 0; }
+    </script>

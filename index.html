@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home - Portfolio Bot Joseph</title>
+        <link rel="icon" href="Design/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <header style="overflow: hidden">
+        <div id="navBar">
+            <img src="Design/logoPortfolio3.png" id="logoPortfolio">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Projects</a></li>
+                    <li><a href="index3.html">About</a></li>
+                    <li><a href="index4.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <div id="wrap">
+            <div id="welcome">
+                <img id="imgWelcomeText" src="Design/WelcomeText.png">
+                <img id="imgHomeText" src="Design/HomeText.png" >
+                <a href="index3.html">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    En savoir plus
+                </a>
+            </div>
+
+            <div id="footer">
+                <div id="margin"></div>
+                <a id="git" href="index2.html" onmouseover="HoverIcon('iconGit', 'iconGitHover')" onmouseout="unHoverIcon('iconGit', 'iconGitHover')">
+                    <img id="iconGit" src="Design\IconGitHub.png">
+                    <img id="iconGitHover" src="Design\IconGitHubHover.png">
+                </a>
+                <a  id="mail" href="index2.html" onmouseover="HoverIcon('iconMail', 'iconMailHover')" onmouseout="unHoverIcon('iconMail', 'iconMailHover')">
+                    <img id="iconMail" src="Design\IconMail.png">
+                    <img id="iconMailHover" src="Design\IconMailHover.png">
+                </a>    
+                <nav id="navFooter">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index2.html">My Projects</a></li>
+                        <li><a href="index3.html">About Me</a></li>
+                        <li><a href="index4.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h5>Thanks to <a id="credit" href="https://www.freepik.com/vectors/background" target="_blank">Freepik</a> for background vectors.</h5>
+                <h6>Copyright &copy; 2021 Joseph Bot. All rights reserved. </h6>
+            </div>
+        </div>
+            
+    </body>
+</html> 
+
+<script>
+    function HoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 0;
+            document.getElementById(iconHover).style.opacity = 1; }
+        function unHoverIcon(icon, iconHover) {
+            document.getElementById(icon).style.opacity = 1;
+            document.getElementById(iconHover).style.opacity = 0; }
+</script>
